@@ -1,0 +1,19 @@
+let board=[0,0,0,0,0,0,0,0,0]; //initial board
+let win=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]; //winning positions
+
+function checkWin(val)
+{
+  for(let rwin of win)
+  {
+    if(board[rwin[0]]==val&&board[rwin[1]]==val&&board[rwin[2]]==val)
+    return true;
+  }
+  return false;
+}
+
+//board=[0,1,2,0,1,2,2,1,0];  //player 1 wins
+//board=[2,2,2,1,1,2,1,2,0]; //player 2 wins
+//board=[1,2,1,2,1,2,2,1,2];  //A Draw
+checkWin(2);
+
+

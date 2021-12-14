@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      function diaplayInternal()
+      {
+        alert("Hello-Embedded JS");
+      }
+    </script>
+  </head>
+  <body>
+
+    <button id="SecondPage" onclick="window.location.href='../index.html'" class="myButton" type="button" name="button">Go to Second Page</button>
+
+
+    <h1>Linking JavaScript in different ways:</h1>
+    <p>Create three files (HTML, CSS and JavaScript),
+      connect JavaScript in three different ways (inline, embedded/internal, external)
+      and display the alert dialog in three different ways.</p>
+
+    <p><strong>Three buttons and three dialogs:</strong></p>
+      <ul>
+        <li>Click the button below to display a dialog with 'Hello-Inline JS' message using inline JS script:
+          <br>
+        <button class="myButton" onclick='alert("Hello-Inline JS")' type="button" name="button">Click Me</button></li>
+        <br>
+        <li>Click the button below to display a dialog with 'Hello-Embedded JS' message using internal/embedded JS script:
+          <br>
+        <button class="myButton" onclick="diaplayInternal()" type="button" name="button">Click Me</button></li>
+        <br>
+        <li>Click the button below to display a dialog with 'hello-External JS' message using external JS script:
+          <br>
+        <button class="myButton" onclick="diaplayExternal()" type="button" name="button">Click Me</button></li>
+        <br>
+      </ul>
+  </body>
+</html>
